@@ -13,6 +13,19 @@ namespace Vidly
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+
+            // define custom route before default route. Order matters! 
+            routes.MapRoute(
+                //name of route
+                "MoviesByReleaseDate",
+                //url of route
+                "movies/released/{year}/{month}",
+                //specifying the defaults
+                new { controller = "Movies", action ="ByReleaseDate" },
+                //applying constraints
+                new { year = @"\d{4}", month = "@\d{2}"}
+                );
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
