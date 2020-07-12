@@ -18,6 +18,10 @@ namespace Vidly
             //attribute routing
             routes.MapMvcAttributeRoutes();
 
+
+
+
+            // Conventional Routing
             routes.MapRoute(
                 //name of route
                 "Show Customers",
