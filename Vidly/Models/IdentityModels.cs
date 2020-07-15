@@ -17,10 +17,10 @@ namespace Vidly.Models
             return userIdentity;
         }
     }
-
+                                        // Gateway to the database                         
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-
+        // This DbSet represents the customer table in the database
         public DbSet<Customer> Customers { get; set; }
 
         public ApplicationDbContext()

@@ -6,7 +6,8 @@ using System.Web;
 namespace Vidly.Models
 {
     public class MembershipType
-    {
+    {   
+        //In entity framework, every entity must have a key. Id = Key 
         public byte Id { get; set; }
         public short SignUpFee { get; set; }
 

@@ -110,3 +110,4 @@ C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.InitialModel.
 C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.csproj.GenerateResource.cache
 C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.IsSubscribedToNewsLetter.resources
 C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddMembershipType.resources
+C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMembershipTypes.resources

@@ -18,6 +18,7 @@ namespace Vidly.Models
         //This is to get the foreign key instead of getting the whole object.
         public byte MembershipTypeId { get; set; }
 
+       
 
 
 
