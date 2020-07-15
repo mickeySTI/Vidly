@@ -10,20 +10,43 @@ namespace Vidly.Controllers
 {
     public class CustomersController : Controller
     {
-        // GET: Customers
 
+        // This is to access the database
+        private ApplicationDbContext _context;
+
+
+        //Initializing database
+        public CustomersController()
+        {                  
+            _context = new ApplicationDbContext();
+        }
+
+
+        //DbContext is a disposible object, so we need to properly dispose this object
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose(); 
+        }
+
+
+        // GET: Customers
 
 
         public ViewResult Index()
         {
-            var customers = GetCustomers();
+            //Old way of getting data. This was when the data was hard coded into the controller
+            /*    var customers = GetCustomers();*/
+
+                                     //This is the DbSet that is in the Identity Model.                       
+            var customers = _context.Customers.ToList();
+
 
             return View(customers);
         }
 
         public ActionResult Details(int id)
         {
-            var customer = GetCustomers().SingleOrDefault(c => c.Id == id);
+            var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
 
             if (customer == null)
                 return HttpNotFound();
@@ -31,21 +54,7 @@ namespace Vidly.Controllers
             return View(customer);
         }
 
-        private IEnumerable<Customer> GetCustomers()
-        {
-            return new List<Customer>
-            {
-                new Customer { Id = 1, Name = "John Smith" },
-                new Customer { Id = 2, Name = "Mary Williams" }
-            };
-
-
-
-        }
-
-
-
-
+  
 
     }
 }
