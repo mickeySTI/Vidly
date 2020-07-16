@@ -112,3 +112,5 @@ C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.IsSubscribedT
 C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddMembershipType.resources
 C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMembershipTypes.resources
 C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.ApplyAnnotationsToCustomerName.resources
+C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddedNamePropToMembershipType.resources
+C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.SetNameOfMembershipTypes.resources
