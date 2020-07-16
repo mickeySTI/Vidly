@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+//Import this to be able to utilize the Include()
+using System.Data.Entity;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.UI.WebControls;
@@ -38,8 +40,8 @@ namespace Vidly.Controllers
             /*    var customers = GetCustomers();*/
 
                                      //This is the DbSet that is in the Identity Model.                       
-            var customers = _context.Customers.ToList();
-
+            var customers = _context.Customers.Include(c => c.MembershipType).ToList();
+                                              // The Include() is used for Eager Loading to be able to load related objects.
 
             return View(customers);
         }
