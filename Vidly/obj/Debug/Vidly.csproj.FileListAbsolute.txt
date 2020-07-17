@@ -114,3 +114,5 @@ C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMembe
 C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.ApplyAnnotationsToCustomerName.resources
 C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddedNamePropToMembershipType.resources
 C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.SetNameOfMembershipTypes.resources
+C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddedCustomerBirthDate.resources
+C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdatedCustomerAndMembershipTypeClass.resources

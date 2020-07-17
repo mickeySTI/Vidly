@@ -16,6 +16,8 @@ namespace Vidly.Models
         [StringLength(255)]
         public string Name { get; set; }
 
+        public DateTime? BirthDate { get; set; }
+
         public bool IsSubscribedToNewsLetter { get; set; }
 
         //Navigation Property
