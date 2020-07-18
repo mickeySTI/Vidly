@@ -116,3 +116,14 @@ C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddedNameProp
 C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.SetNameOfMembershipTypes.resources
 C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddedCustomerBirthDate.resources
 C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdatedCustomerAndMembershipTypeClass.resources
+C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddedMoviesToDbContext.resources
+C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdatedGenreProps.resources
+C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdatedMoviesProps.resources
+C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateGenre.resources
+C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdatedGenre.resources
+C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateGenre1.resources
+C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.FixedGenre.resources
+C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateGenre2.resources
+C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdatedGenreAgain.resources
+C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateGenre3.resources
+C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdatedMovies.resources

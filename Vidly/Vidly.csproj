@@ -211,9 +211,54 @@
     <Compile Include="Migrations\202007172138157_UpdatedCustomerAndMembershipTypeClass.Designer.cs">
       <DependentUpon>202007172138157_UpdatedCustomerAndMembershipTypeClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202007180110422_AddedMoviesToDbContext.cs" />
+    <Compile Include="Migrations\202007180110422_AddedMoviesToDbContext.Designer.cs">
+      <DependentUpon>202007180110422_AddedMoviesToDbContext.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007180119345_UpdatedGenreProps.cs" />
+    <Compile Include="Migrations\202007180119345_UpdatedGenreProps.Designer.cs">
+      <DependentUpon>202007180119345_UpdatedGenreProps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007180122504_UpdatedMoviesProps.cs" />
+    <Compile Include="Migrations\202007180122504_UpdatedMoviesProps.Designer.cs">
+      <DependentUpon>202007180122504_UpdatedMoviesProps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007180123441_PopulateGenre.cs" />
+    <Compile Include="Migrations\202007180123441_PopulateGenre.Designer.cs">
+      <DependentUpon>202007180123441_PopulateGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007180139060_UpdatedGenre.cs" />
+    <Compile Include="Migrations\202007180139060_UpdatedGenre.Designer.cs">
+      <DependentUpon>202007180139060_UpdatedGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007180139417_PopulateGenre1.cs" />
+    <Compile Include="Migrations\202007180139417_PopulateGenre1.Designer.cs">
+      <DependentUpon>202007180139417_PopulateGenre1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007180200457_FixedGenre.cs" />
+    <Compile Include="Migrations\202007180200457_FixedGenre.Designer.cs">
+      <DependentUpon>202007180200457_FixedGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007180204598_PopulateGenre2.cs" />
+    <Compile Include="Migrations\202007180204598_PopulateGenre2.Designer.cs">
+      <DependentUpon>202007180204598_PopulateGenre2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007180209036_UpdatedGenreAgain.cs" />
+    <Compile Include="Migrations\202007180209036_UpdatedGenreAgain.Designer.cs">
+      <DependentUpon>202007180209036_UpdatedGenreAgain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007180209342_PopulateGenre3.cs" />
+    <Compile Include="Migrations\202007180209342_PopulateGenre3.Designer.cs">
+      <DependentUpon>202007180209342_PopulateGenre3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007180444100_UpdatedMovies.cs" />
+    <Compile Include="Migrations\202007180444100_UpdatedMovies.Designer.cs">
+      <DependentUpon>202007180444100_UpdatedMovies.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -329,6 +374,39 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202007172138157_UpdatedCustomerAndMembershipTypeClass.resx">
       <DependentUpon>202007172138157_UpdatedCustomerAndMembershipTypeClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007180110422_AddedMoviesToDbContext.resx">
+      <DependentUpon>202007180110422_AddedMoviesToDbContext.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007180119345_UpdatedGenreProps.resx">
+      <DependentUpon>202007180119345_UpdatedGenreProps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007180122504_UpdatedMoviesProps.resx">
+      <DependentUpon>202007180122504_UpdatedMoviesProps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007180123441_PopulateGenre.resx">
+      <DependentUpon>202007180123441_PopulateGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007180139060_UpdatedGenre.resx">
+      <DependentUpon>202007180139060_UpdatedGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007180139417_PopulateGenre1.resx">
+      <DependentUpon>202007180139417_PopulateGenre1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007180200457_FixedGenre.resx">
+      <DependentUpon>202007180200457_FixedGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007180204598_PopulateGenre2.resx">
+      <DependentUpon>202007180204598_PopulateGenre2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007180209036_UpdatedGenreAgain.resx">
+      <DependentUpon>202007180209036_UpdatedGenreAgain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007180209342_PopulateGenre3.resx">
+      <DependentUpon>202007180209342_PopulateGenre3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007180444100_UpdatedMovies.resx">
+      <DependentUpon>202007180444100_UpdatedMovies.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
