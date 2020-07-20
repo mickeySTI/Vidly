@@ -8,6 +8,9 @@ using System.Web.Mvc;
 using System.Web.UI.WebControls;
 using Vidly.Models;
 using Vidly.ViewModels;
+using System.Data.Entity.Infrastructure.MappingViews;
+using System.Web.Mvc.Html;
+
 namespace Vidly.Controllers
 {
     public class CustomersController : Controller
@@ -30,9 +33,19 @@ namespace Vidly.Controllers
             _context.Dispose(); 
         }
 
+   
+        public ActionResult New()
+        {
+
+
+
+
+            return View();
+        }
+
+        
 
         // GET: Customers
-
 
         public ViewResult Index()
         {

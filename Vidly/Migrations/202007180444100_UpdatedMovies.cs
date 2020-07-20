@@ -14,5 +14,5 @@ namespace Vidly.Migrations
         {
             AlterColumn("dbo.Movies", "Name", c => c.String());
         }
-    }
+    }  
 }
