@@ -16,6 +16,7 @@ namespace Vidly.Models
         [StringLength(255)]
         public string Name { get; set; }
 
+        [Display(Name = "Date of Birth")]
         public DateTime? BirthDate { get; set; }
 
         public bool IsSubscribedToNewsLetter { get; set; }
@@ -24,6 +25,7 @@ namespace Vidly.Models
         public MembershipType MembershipType { get; set; }
 
         //This is to get the foreign key instead of getting the whole object.
+        [Display(Name = "Membership Type")]
         public byte MembershipTypeId { get; set; }
 
        
