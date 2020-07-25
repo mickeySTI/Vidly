@@ -9,6 +9,7 @@ using System.Web;
 using System.Web.Mvc;
 using Vidly.Models;
 using Vidly.ViewModels;
+using System.Data.Entity.Validation;
 
 namespace Vidly.Controllers
 {
@@ -75,34 +76,52 @@ namespace Vidly.Controllers
         {
             var movie = _context.Movies.Include(m => m.Genre).SingleOrDefault(m => m.Id == id);
 
-            if(movie == null)
+            if (movie == null)
                 return HttpNotFound();
 
             return View(movie);
-        }
-
-
-
-        //Hard coded data
-     /*   private IEnumerable<Movie> GetMovies()
-        {
-            return new List<Movie>
-            {
-                new Movie { Id = 1, Name = "Shrek" },
-                new Movie { Id = 2, Name = "Wall-E" }
-            };
-
-
 
         }
-*/
 
 
 
         public ActionResult Edit(int id)
         {
-            return Content("id=" + id);
+            var movie = _context.Movies.SingleOrDefault(c => c.Id == id);
+
+            if (movie == null)
+                return HttpNotFound();
+
+            var viewModel = new MovieFormViewModel
+            {
+                Movie = movie,
+                Genres = _context.Genres.ToList()
+            };
+
+            return View("MovieForm", viewModel);
         }
+
+
+
+
+
+        //Hard coded data
+        /*   private IEnumerable<Movie> GetMovies()
+           {
+               return new List<Movie>
+               {
+                   new Movie { Id = 1, Name = "Shrek" },
+                   new Movie { Id = 2, Name = "Wall-E" }
+               };
+
+
+
+           }
+   */
+
+
+
+
 
         //movies
         // ? to make nullable
@@ -129,14 +148,43 @@ namespace Vidly.Controllers
         }
 
 
+        public ActionResult New()
+        {
+                
+                var genres = _context.Genres.ToList();
+                
+            
+                var viewModel = new MovieFormViewModel
+                {
+                   Genres = genres
+                };
+
+         
+            return View("MovieForm", viewModel);
+        }
 
 
+        [HttpPost]
+        public ActionResult Save(Movie movie)
+        {
+            if (movie.Id == 0)
+            {
+                movie.DateAdded = DateTime.Now;
+                _context.Movies.Add(movie);
+            }
+            else
+            {
+                var movieInDb = _context.Movies.Single(m => m.Id == movie.Id);
+                movieInDb.Name = movie.Name;
+                movieInDb.GenreId = movie.GenreId;
+                movieInDb.NumberInstock = movie.NumberInstock;
+                movieInDb.ReleaseDate = movie.ReleaseDate;
+            }
 
+            _context.SaveChanges();
 
-
-
-
-
+            return RedirectToAction("Index", "Movies");
+        }
 
 
 

@@ -127,3 +127,4 @@ C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateGenre
 C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdatedGenreAgain.resources
 C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateGenre3.resources
 C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdatedMovies.resources
+C:\Users\imick\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdatedMovieDateAddedProp.resources
